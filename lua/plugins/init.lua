@@ -8,7 +8,6 @@ return require('packer').startup(function()
     use 'miyakogi/seiya.vim'
     use 'preservim/tagbar'
     use 'sonph/onehalf'
-  
   --  use 'Valloric/YouCompleteMe'
     use 'ap/vim-css-color'
     use {

@@ -27,5 +27,4 @@ set.backup=false
 
 set.clipboard="unnamedplus"
 set.mouse="a"
-
 --local seiya_auto_enbale=true
