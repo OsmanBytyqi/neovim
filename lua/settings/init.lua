@@ -12,11 +12,11 @@ set.smartcase=true
 
 
 set.splitbelow=true
-set.splitright=true
+--set.splitright=true
 set.wrap=false
 set.scrolloff=5
 set.fileencoding='utf-8'
-set.termguicolors=true
+set.termguicolors=false
 
 
 set.relativenumber=true
@@ -27,3 +27,5 @@ set.backup=false
 
 set.clipboard="unnamedplus"
 set.mouse="a"
+
+--local seiya_auto_enbale=true
