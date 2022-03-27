@@ -6,13 +6,14 @@
 "
 
 
+
 lua require ('settings')
 lua require ('plugins')
 lua require ('color-schemes.gruvbox')
 lua require ('nvim-tree-config')
 lua require ('mapps')
 lua require ('plugins')
-
+lua require ('toggle-vim')
 
 
 

@@ -2,7 +2,7 @@ local keymap = vim.api.nvim_set_keymap
 keymap('n','<c-s>',':w<CR>',{})
 keymap('i','jj','<Esc>',{})
 keymap('n','<c-d>',':NvimTreeToggle<CR>',{})
-keymap('n','<c-t>',':below terminal<CR>',{})
+--keymap('n','<c-t>',':below terminal<CR>',{})
 keymap('n','<c-p>',':TagbarToggle<CR>',{})
 keymap('n','<c-f>','/',{})
 keymap('n','<c-h>',':noh<CR>',{})

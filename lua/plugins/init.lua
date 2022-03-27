@@ -7,6 +7,7 @@ return require('packer').startup(function()
     use 'bling/vim-airline'
     use 'miyakogi/seiya.vim'
     use 'preservim/tagbar'
+    use {"akinsho/toggleterm.nvim"}
     use 'sonph/onehalf'
   --  use 'Valloric/YouCompleteMe'
     use 'ap/vim-css-color'
