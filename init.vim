@@ -9,13 +9,11 @@
 
 lua require ('settings')
 lua require ('plugins')
-lua require ('color-schemes.gruvbox')
+"lua require ('color-schemes.gruvbox')
 lua require ('nvim-tree-config')
 lua require ('mapps')
 lua require ('plugins')
 lua require ('toggle-vim')
-
-
 
 
 
@@ -25,17 +23,35 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tc50cal/vim-terminal'
 Plugin 'neoclide/coc.nvim'
-
+Plugin 'joshdick/onedark.vim'
 Plugin 'othree/html5.vim'
 Plugin 'dense-analysis/ale'
+Plugin 'arcticicestudio/nord'
+Plugin 'chriskempson/tomorrow-theme'
+Plugin 'mhartington/oceanic-next'
+Plugin 'miyakogi/seiya.vim'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'sonph/onehalf', { 'rtp': 'vim' }
+Plugin 'iamcco/markdown-preview.nvim' 
 call vundle#end()            " required
+"let g:seiya_auto_enable=1
+"colorscheme onehalfdark
 
-
-
-" air-line
+colorscheme OceanicNext
+let g:airline_theme='onehalfdark'
 let g:airline_powerline_fonts = 1
 
+let g:mkdp_auto_close = 0
+nnoremap <C-m> :MarkdownPreview<CR>
+
+
+set nobackup       "no backup files
+set nowritebackup  "only in case you don't want a backup file while editing
+set noswapfile 
+"colorscheme nord
 if !exists('g:airline_symbols')
+    
+    
     let g:airline_symbols = {}
 endif
 
@@ -49,3 +65,4 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
 inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
+
