@@ -33,13 +33,14 @@ Plugin 'miyakogi/seiya.vim'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'sonph/onehalf', { 'rtp': 'vim' }
 Plugin 'iamcco/markdown-preview.nvim' 
-Plugin 'github/copilot.vim'
+Plugin 'github/copilot.vim'    
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()            " required
 "let g:seiya_auto_enable=1
-"colorscheme onehalfdark
+colorscheme onehalfdark
 set background=dark 
-"colorscheme OceanicNext
-"let g:airline_theme='onehalfdark'
+colorscheme OceanicNext
+"let g:airline_theme='nord'
 let g:airline_powerline_fonts = 1
 
 let g:mkdp_auto_close = 0
