@@ -9,7 +9,7 @@
 
 lua require ('settings')
 lua require ('plugins')
-"lua require ('color-schemes.gruvbox')
+lua require ('color-schemes.gruvbox')
 lua require ('nvim-tree-config')
 lua require ('mapps')
 lua require ('plugins')
@@ -33,20 +33,22 @@ Plugin 'miyakogi/seiya.vim'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'sonph/onehalf', { 'rtp': 'vim' }
 Plugin 'iamcco/markdown-preview.nvim' 
+Plugin 'github/copilot.vim'
 call vundle#end()            " required
 "let g:seiya_auto_enable=1
 "colorscheme onehalfdark
-
-colorscheme OceanicNext
-let g:airline_theme='onehalfdark'
+set background=dark 
+"colorscheme OceanicNext
+"let g:airline_theme='onehalfdark'
 let g:airline_powerline_fonts = 1
 
 let g:mkdp_auto_close = 0
 nnoremap <C-m> :MarkdownPreview<CR>
+set number relativenumber
+set nu rnu
 
-
-set nobackup       "no backup files
-set nowritebackup  "only in case you don't want a backup file while editing
+set nobackup       "no bafiles
+set nowritebackup  "only in case you don't wa bfile while editing
 set noswapfile 
 "colorscheme nord
 if !exists('g:airline_symbols')

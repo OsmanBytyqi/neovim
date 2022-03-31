@@ -6,7 +6,7 @@ keymap('n','<c-d>',':NvimTreeToggle<CR>',{})
 keymap('n','<c-p>',':TagbarToggle<CR>',{})
 keymap('n','<c-f>','/',{})
 keymap('n','<c-h>',':noh<CR>',{})
-keymap('i','{','{}',{})
+--keymap('i','{','{}',{})
 local opts={noremap=true}
 keymap('n','<c-j>','<c-w>j',opts)
 keymap('n','<c-h>','<c-w>h',opts)

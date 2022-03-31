@@ -9,6 +9,7 @@ return require('packer').startup(function()
     use 'preservim/tagbar'
     use {"akinsho/toggleterm.nvim"}
     use 'sonph/onehalf'
+    use 'tpope/vim-surround'
   --  use 'Valloric/YouCompleteMe'
     use 'ap/vim-css-color'
     use {

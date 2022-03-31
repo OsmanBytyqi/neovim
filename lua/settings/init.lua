@@ -19,12 +19,11 @@ set.fileencoding='utf-8'
 set.termguicolors=false
 
 
-set.relativenumber=true
---set.cursorline=true
+set.cursorline=true
 
 set.hidden=true
 set.backup=false
 
 set.clipboard="unnamedplus"
-set.mouse="a"
+--set.mouse="a"
 --local seiya_auto_enbale=true
