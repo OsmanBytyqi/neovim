@@ -3,7 +3,7 @@
 </p>
 
 ---
-### My [neovim](https://www.example.com/) set up
+### My [neovim](https://www.example.com/) setup
 
 ---
 ### Project layout 
