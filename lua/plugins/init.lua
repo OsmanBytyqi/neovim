@@ -10,8 +10,9 @@ return require('packer').startup(function()
     use {"akinsho/toggleterm.nvim"}
     use 'sonph/onehalf'
     use 'tpope/vim-surround'
-  --  use 'Valloric/YouCompleteMe'
     use 'ap/vim-css-color'
+    use "lukas-reineke/lsp-format.nvim"
+  --  use 'Valloric/YouCompleteMe'
     use {
     'kyazdani42/nvim-tree.lua',
     requires = {

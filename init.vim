@@ -5,8 +5,6 @@
 "   \___/|____/
 "
 
-
-
 lua require ('settings')
 lua require ('plugins')
 lua require ('color-schemes.gruvbox')
@@ -14,7 +12,6 @@ lua require ('nvim-tree-config')
 lua require ('mapps')
 lua require ('plugins')
 lua require ('toggle-vim')
-
 
 
 set rtp+=~/.config/nvim/Vundle.vim
@@ -25,6 +22,7 @@ Plugin 'tc50cal/vim-terminal'
 Plugin 'neoclide/coc.nvim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'othree/html5.vim'
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'dense-analysis/ale'
 Plugin 'arcticicestudio/nord'
 Plugin 'chriskempson/tomorrow-theme'
@@ -33,14 +31,18 @@ Plugin 'miyakogi/seiya.vim'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'sonph/onehalf', { 'rtp': 'vim' }
 Plugin 'iamcco/markdown-preview.nvim' 
-Plugin 'github/copilot.vim'    
+"Plugin 'github/copilot.vim'    
 Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 call vundle#end()            " required
 let g:seiya_auto_enable=1
 "colorscheme onehalfdark
 set background=dark 
-set updatetime=250
+set updatetime=10
+" when running at every change you may want to disable quickfix
+let g:prettier#quickfix_enabled = 0
+autocmd TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.svelte,*.yaml,*.html PrettierAsync
 "colorscheme OceanicNext
 "let g:airline_theme='nord'
 let g:airline_powerline_fonts = 1
@@ -70,3 +72,4 @@ let g:airline_symbols.linenr = ''
 
 inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 
+autocmd Filetype tex nnoremap <F2> :LLPStartPreview<cr>
