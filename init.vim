@@ -50,6 +50,7 @@ let g:mkdp_auto_close = 0
 nnoremap <C-m> :MarkdownPreview<CR>
 set number relativenumber
 set nu rnu
+set clipboard+=unnamedplus
 
 set nobackup       "no bafiles
 set nowritebackup  "only in case you don't wa bfile while editing
