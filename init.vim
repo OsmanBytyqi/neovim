@@ -52,6 +52,10 @@ set number relativenumber
 set nu rnu
 set clipboard+=unnamedplus
 
+"set transpraent background
+:hi normal guibg=000000
+
+
 set nobackup       "no bafiles
 set nowritebackup  "only in case you don't wa bfile while editing
 set noswapfile 
