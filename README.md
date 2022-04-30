@@ -24,7 +24,7 @@
 
 ```
 
-`all these files are located in $home/$hostname/.config/nvim/lua`
+`all these files are located in $home/$hostname/.config/nvim/`
 
 
 ----
