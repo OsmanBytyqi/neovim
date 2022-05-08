@@ -56,6 +56,10 @@ set clipboard+=unnamedplus
 :hi normal guibg=000000
 
 
+" Replace all is aliased to S.
+	nnoremap S :%s//g<Left><Left>
+
+
 set nobackup       "no bafiles
 set nowritebackup  "only in case you don't wa bfile while editing
 set noswapfile 
